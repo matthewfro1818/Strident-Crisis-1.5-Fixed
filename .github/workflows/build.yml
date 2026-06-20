@@ -13,7 +13,7 @@ jobs:
   buildLinux:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.2.5
@@ -53,7 +53,7 @@ jobs:
   buildWindows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2.3.0
+      - uses: actions/checkout@main
       - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.2.5
@@ -92,7 +92,7 @@ jobs:
   buildMac:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.2.5
@@ -133,7 +133,7 @@ jobs:
   buildWeb:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
 
       - uses: krdlab/setup-haxe@master
         with:
